@@ -105,6 +105,28 @@ switch (commander.action) {
       .then(json => console.log(json))
       break
   }
+  case 'filltime_default_customDate': {
+    const time = {
+      "time-entry": {
+        "description": `la personne ${commander.id} à ajouter ce temps depuis le cli ALTIMA \\o/`,
+        "person-id": commander.id,
+        "date": moment(commander.date, ['DD/MM/YYYY']).format('YYYYMMDD'),
+        "time": "09:00",
+        "hours": "8",
+        "minutes": "0",
+        "isbillable": "0",
+        "tags": ""
+      }
+    }
+    fetch(`https://${commander.company}.eu.teamwork.com/tasks/${commander.todoItem}/time_entries.json`, {
+      method: 'POST',
+      headers: { 'Authorization': `BASIC ${btoa(commander.token + ":xxx")}` },
+      body: JSON.stringify(time)
+    })
+      .then(response => response.json())
+      .then(json => console.log(json))
+      break
+  }
   case 'filltime_for_aweek': {
     const baseDate = moment()
     console.log('BASE DATA : %s', baseDate.format('DD/MM/YYYY'))
@@ -166,3 +188,5 @@ switch (commander.action) {
     break
   }
 }
+
+//node index.js --company altima1 --token twp_wpJ4qCnsMIQfr8I3fRLwWC6dbMN6_eu --project 3830353 --id 310045 --action filltime_default_customDate --todo-item 15469829 --date 28/05/2018
