@@ -18,5 +18,9 @@ Recuperer le token dans votre interface ainsi que votre people ID
 # Utilisation
 
 ```bash
+node index.js --help
+```
+
+```bash
 node index.js --company <company> --token <token> --project <project> --id <id> --action filltime_for_week --todo-item <todoitem> --date <date>
 ```
