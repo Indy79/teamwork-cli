@@ -188,5 +188,3 @@ switch (commander.action) {
     break
   }
 }
-
-//node index.js --company altima1 --token twp_wpJ4qCnsMIQfr8I3fRLwWC6dbMN6_eu --project 3830353 --id 310045 --action filltime_default_customDate --todo-item 15469829 --date 28/05/2018
