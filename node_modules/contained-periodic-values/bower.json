@@ -1,0 +1,30 @@
+{
+  "name": "contained-periodic-values.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/jmeas/contained-periodic-values.js",
+  "authors": [
+    "Jmeas <jellyes2@gmail.com>"
+  ],
+  "description": "Find how many values of a discrete periodic function are contained in an interval.",
+  "main": "dist/contained-periodic-values.js",
+  "keywords": [
+    "mathematics",
+    "math",
+    "period",
+    "periodic",
+    "contained",
+    "solution",
+    "function"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "nearest-periodic-value.js": "~1.0.0"
+  }
+}

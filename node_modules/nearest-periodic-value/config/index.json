@@ -1,0 +1,7 @@
+{
+  "destinationFolder": "dist",
+  "exportFileName": "nearest-periodic-value",
+  "entryFileName": "nearest-periodic-value",
+  "exportVarName": "nearestPeriodicValue",
+  "mochaGlobals": ["stub", "spy", "expect"]
+}

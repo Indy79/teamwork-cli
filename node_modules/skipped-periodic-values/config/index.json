@@ -1,0 +1,7 @@
+{
+  "destinationFolder": "dist",
+  "exportFileName": "skipped-periodic-values",
+  "entryFileName": "skipped-periodic-values",
+  "exportVarName": "skippedPeriodicValues",
+  "mochaGlobals": ["stub", "spy", "expect", "nearestPeriodicValue", "fixtures"]
+}
